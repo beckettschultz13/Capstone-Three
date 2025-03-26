@@ -1,0 +1,23 @@
+# FINAL MODEL #
+# TEXT DATA MUST BE TRANSFORMED USING A TFIDF VECTORIZER #
+
+sklearn.svm.LinearSVC(random_state=0, tol=1e-5, dual=True)
+
+# METRICS #
+
+              precision    recall  f1-score   support
+
+  Irrelevant       0.88      0.80      0.84      2477
+    Negative       0.83      0.91      0.87      4316
+     Neutral       0.88      0.82      0.85      3559
+    Positive       0.85      0.86      0.85      3980
+
+    accuracy                           0.85     14332
+   macro avg       0.86      0.85      0.85     14332
+weighted avg       0.86      0.85      0.85     14332
+
+
+
+# SIMILAR RESULTS CAN BE ACHIEVED WITH:
+
+sklearn.linear_model.LogisticRegressionCV(max_iter=1000)
